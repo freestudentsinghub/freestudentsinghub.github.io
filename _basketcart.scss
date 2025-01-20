@@ -1,0 +1,106 @@
+.header__link_position:hover .basket__cart {
+
+    display: block;
+}
+
+.basket__cart {
+    position: absolute;
+    width: 573px;
+    height: 480px;
+    background: rgb(255, 255, 255);
+    right: 11%;
+    top: 7%;
+    padding: 40px 48px 40px 48px;
+    display: none;
+    z-index: 10;
+
+}
+
+
+.cart__basket {
+
+    &-border {
+        border-bottom: 0.5px solid rgb(202, 205, 216);
+    }
+
+    &-gap {
+        margin-top: 24px;
+    }
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &_left {
+        display: flex;
+        flex-direction: row;
+        gap: 31px;
+        margin-bottom: 24px;
+    }
+
+    &_img {
+        width: 144px;
+        height: 144px;
+    }
+
+    &_heading {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &_cost {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 54px;
+    }
+
+    &_link {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: left;
+        text-decoration-line: underline;
+
+        &-box {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+    &_button {
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        width: 290px;
+        height: 41px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 18px;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.cart__order {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
